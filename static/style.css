@@ -1,0 +1,47 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  padding: 5px;
+  margin: 5px;
+  color:rgb(13, 74, 74);
+  
+}
+
+#webname {
+  background-color: #b5fcb6;
+}
+nav a{
+  text-decoration: None;
+  margin: 5px;
+  font-size: larger;
+  color: blueviolet;
+  margin-right: 15px;
+}
+th{
+  padding: 12px;
+  background-color: aqua;
+  margin: auto;
+  text-align: center;
+  color: red;
+  width: fit-content;
+}
+form{
+  padding: 12px;
+  background-color: aqua;
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+#funList {
+  display: none;
+}
+
+#funButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
