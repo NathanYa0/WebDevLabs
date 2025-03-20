@@ -7,25 +7,55 @@
     <meta name="description" content="Your name professional website">
     <title>Nathan Yao</title>
     
+    <!-- Google Fonts embed code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Your stylesheet -->
+    <link rel="stylesheet" href="static/style.css">
+
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Your Script -->
+    <script src="./static/script.js" defer></script>
+
 </head>
-<body style="font-family: Arial">
-    <header style="color:blue; background:lightblue">
-        <h1>Nathan Yao</h1>
+<body>
+    <header>
+        <h1, id="webname">Nathan Yao </h1>
         <nav>
-            <A HREF="index.html">Home</A>
-            <a href="views/cv.html">CV</a>
-            <A HREF="views/contact.html">Contact me</A>
-            <A HREF="views/fun.html">For Fun</A>
+            <a HREF="index.html">Profile</a>
+            <a href="views/cv.html">Resume</a>
+            <a HREF="views/contact.html">Contact me</a>
+            <a HREF="views/fun.html">Fun</a>
         </nav>
     </header>
     <div class = "main">
-        <h2> Hi, my name is Nathan. </h2>
+        <h2 id="greeting">Hi, my name is Nathan.</h2>
         <img src="static/ME2.jpg" alt="banana">
     </div>
     <div id="intro">
-        I grew up in Cupertino, California with two older brothers. When I was yough i loved to play soccer and video games. Though I no longer play soccer, I still love playing video games and have picked up poker and other board games. I later moved to Sunnnyvale, California to attend my middle and high school.
-        I did a lot of community service and environmental projects in highschool, which have contributed to my interpersonal and professional skillset.  
+       
     </div>
-    <footer>© 2025 designed and coded by Nathan Yao </footer>
-</body>
+
+    <section id="bioToggle">
+        <!-- Short bio visible initially -->
+        <p id="shortBio">
+          Grew up in Cupertino, Califorinia with 2 brothers. I love all types of games.
+        </p>
+        <p id="extendedBio" style="display: none;">
+            I grew up in Cupertino, California with two older brothers. When I was yough i loved to play soccer and video games. Though I no longer play soccer, I still love playing video games and have picked up poker and other board games. I later moved to Sunnnyvale, California to attend my middle and high school.
+            I did a lot of community service and environmental projects in highschool, which have contributed to my interpersonal and professional skillset.  
+        </p>
+        <!-- Toggle Buttons -->
+        <button id="readMore">Read More</button>
+        <button id="readLess" style="display: none;">Read Less</button>
+    </section>
+
+
+    <footer>
+        <p id="copyYear"></p>
+        <p>designed and coded by Nathan Yao</p>
+      </footer></body>
 </html>
