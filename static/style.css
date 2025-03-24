@@ -1,27 +1,27 @@
-* {
+style .css* {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
   padding: 5px;
   margin: 5px;
-  color:rgb(13, 74, 74);
-  
+  color: rgb(13, 74, 74);
 }
 
 #webname {
   background-color: #b5fcb6;
 }
-nav a{
-  text-decoration: None;
+
+nav a {
+  text-decoration: none;
   margin: 5px;
   font-size: larger;
   color: blueviolet;
   margin-right: 15px;
 }
-th{
+
+th {
   padding: 12px;
   background-color: aqua;
   margin: auto;
@@ -29,13 +29,15 @@ th{
   color: red;
   width: fit-content;
 }
-form{
+
+form {
   padding: 12px;
   background-color: aqua;
   margin: auto;
   text-align: center;
   display: block;
 }
+
 #funList {
   display: none;
 }
@@ -44,4 +46,34 @@ form{
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+}
+
+#FavList {
+  display: none;
+}
+*/
+#funList {
+  display: block;
+}
+.funIMG {
+  border-radius: 100%;
+}
+
+.container {
+  display: inline-block;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.adviceButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #b5fcb6;
+  border: none;
+  border-radius: 5px;
+  color: rgb(13, 74, 74);
 }
