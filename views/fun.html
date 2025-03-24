@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Your name">
-    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <meta name="description" content="Your name professional website">
-    <title>Nathan Yao CV</title>
-    <!-- Google Fonts embed code -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <!-- Your stylesheet -->
-    <link rel="stylesheet" href="../static/style.css">
-    <!-- Script -->
-    <script src="../static/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="author" content="Your name">
+  <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+  <meta name="description" content="Your name professional website">
+  <title>Nathan Yao CV</title>
+  <!-- Google Fonts embed code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="../static/style.css">
+  <!-- Script -->
+  <script src="../static/script.js" defer></script>
 </head>
-<body >
-    <header>
-        <h1, id="webname">Nathan Yao </h1>
-        <nav>
-            <A HREF="../index.html">Profile</A>
-            <a href="cv.html">Resume</a>
-            <A HREF="contact.html">Contact me</A>
-            <A HREF="fun.html">Fun</A>
-        </nav>
-    </header>
-    <div class = "main">
-        <h2> Things I love to do for fun </h2>
-        <button id="funButton" onclick="showList()">Click to see...</button>
-        <ul id="funList">
-            <li>Poker</li>
-            <li>Watching Movies</li>
-            <li>Playing video games</li>
-            <li>Traveling</li>
-            <li>Eating sweets</li>
-            <li>Running</li>
-            <li>Soccer</li>
-          </ul>
+<body>
+  <header>
+    <h1 id="webname">Nathan Yao</h1>
+    <nav>
+      <a href="../index.html">Profile</a>
+      <a href="cv.html">Resume</a>
+      <a href="contact.html">Contact me</a>
+      <a href="fun.html">Fun</a>
+    </nav>
+  </header>
+  <div class="mainLayout">
+    <div id="item1">
+      <h2>Things I love to do for fun</h2>
+      <ul id="funList">
+        <li>Poker</li>
+        <li>Watching Movies</li>
+        <li>Playing video games</li>
+        <li>Traveling</li>
+        <li>Eating sweets</li>
+        <li>Running</li>
+        <li>Soccer</li>
+      </ul>
     </div>
-    <footer id="copyYear" > © designed and coded by Nathan Yao </footer>
+    <div id="item2">
+      <img src="../static/imgpoles.jpg" alt="Fun Image" class="funIMG">
+    </div>
+    <div id="item3">
+      <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/OJQP1pKgzBY" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              style="display: block; margin: 0 auto; border-radius: 10px;">
+      </iframe>
+    </div>
+    <div id="item4">
+      <div class="container">
+        <h2>Need Some Advice?</h2>
+        <p id="adviceText">Click the button to get a random piece of advice!</p>
+        <button class="adviceButton" onclick="getAdvice()">Get Advice</button>
+      </div>
+    </div>
+    <!-- <button id="funButton" onclick="showList()">Click to see...</button> -->
+  </div>
+  <footer id="copyYear">© designed and coded by Nathan Yao</footer>
 </body>
 </html>
