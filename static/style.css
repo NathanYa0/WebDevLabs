@@ -48,6 +48,10 @@ form {
   cursor: pointer;
 }
 
+#FavList {
+  display: none;
+}
+
 #funList {
   display: block;
 }
