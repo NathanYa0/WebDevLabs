@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Your name">
+  <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+  <meta name="description" content="Your name professional website">
+  <title>Nathan Yao Contact Me</title>
+  <!-- Google Fonts embed code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="../static/style.css">
+  <!-- Script -->
+  <script src="../static/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 id="webname">Nathan Yao</h1>
+    <nav>
+      <a href="../index.html">Profile</a>
+      <a href="cv.html">Resume</a>
+      <a href="contact.html">Contact me</a>
+      <a href="fun.html">Fun</a>
+    </nav>
+  </header>
+  
+  <div class="mainLayout">
+    <div id="item1">
+      <h2>Find Me</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.995879953273!2d-80.00532268460651!3d40.444710079363865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f76d3e1c5b51%3A0x7a5f51182eaa8d89!2sCarnegie%20Mellon%20University!5e0!3m2!1sen!2sus!4v1582561348372!5m2!1sen!2sus" 
+        style="width:100%; height:300px; border:0; border-radius:10px; margin-bottom:20px;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+    
+    <div id="item2">
+      <h2>Contact Me</h2>
+      <form action="/submit" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" required></textarea>
+        </div>
+        <input type="submit" value="submit" onclick="validate()">
+      </form>
+      <div id="message"></div>
+    </div>
+  </div>
+  
+  <footer id="copyYear">© designed and coded by Nathan Yao</footer>
+  
+  <table border="1">
+    <tr>
+      <td>Email</td>
+      <td>Phone Number(not real)</td>
+    </tr>
+    <tr>
+      <td>nyao2@andrew.cmu.edu</td>
+      <td>(555)-555-5555</td>
+    </tr>
+  </table>
+</body>
+</html>
